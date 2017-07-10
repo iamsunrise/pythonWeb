@@ -8,9 +8,17 @@ from flask import url_for
 
 app = Flask(__name__)
 
-#装饰器#
+#装饰器
 @app.route('/')
 def index():
+'''
+    a = 3
+    b = 'c'
+    d = 4
+    return 'hello world'+'123'
+    print __name__
+
+'''
     return redirect(url_for('url'))
 @app.route('/url')
 def url():
